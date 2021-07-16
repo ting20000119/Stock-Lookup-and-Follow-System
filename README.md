@@ -23,17 +23,15 @@ by default this webserver will run on localhost:5000
 
 ### Insertion
 - users can add their own accounts with username, password, name and email
-- user can customize their own playlist by adding songs
+- user can customize their own playlist by adding stocks
 - everyday new stock info gets imported into the Elastic Search System
 
 ### Deletion
 - user can remove liked stocks
 
-### Update
-- users can edit their personal information including name and email.
 
 ### Other Specialty Functions
-- Permission system (only people that have logged in can access song search and playlists)
+- Permission system (only people that have logged in can customize their own playlist by adding stocks)
 
 ![image](https://github.com/ting20000119/Stock-Lookup-and-Follow-System/blob/main/Stock%20Lookup%20and%20Follow%20System/img/home.png)
 
