@@ -34,3 +34,5 @@ by default this webserver will run on localhost:5000
 
 ### Other Specialty Functions
 - Permission system (only people that have logged in can access song search and playlists)
+
+![image](https://github.com/ting20000119/Stock-Lookup-and-Follow-System/blob/main/Stock%20Lookup%20and%20Follow%20System/img/home.png)
