@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <html lang="zh-Hant-TW">
+    <h1>My favorite</h1>
+
+    {% if result %}
+    {% for stock in result %}
+    <table class="table table-striped" action="" method="POST">
+        <tr>
+
+          <td><a href="{{url_for('show', id=stock.symbolId)}}">{{stock.nameZhTw}}</td>
+          <td><a href="/delete/{{stock.symbolId}}" class="btn btn-default pull-right">Delete</a></td>
+
+        </tr>
+    </table>
+    {% endfor %}
+
+
+
+
+    {% endif %}
+{% endblock %}
+<!-- <button type="submit" class="btn btn-primary" onclick="/searchresult/{{request.form.Song}}">Submit</button> -->

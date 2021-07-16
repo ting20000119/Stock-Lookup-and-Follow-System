@@ -1,0 +1,106 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <!DOCTYPE html>
+    <html lang="zh-Hant-TW">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='homepage.css') }}">
+        <head>
+        <title>stock homepage</title>
+        </head>
+        <body>
+            <form >
+                <label class="label" for="txt-search">Stock Search</label>
+            </form>
+
+            <div  style="text-align:center" >
+            <h2>
+                今日股市
+            </h2>
+            </div>
+        <div class="w3-row ">
+                <div class="card w3-col s4 w3-pale-red">
+                  <h1>{{stockname[0]}}</h1>
+                  <div id="chart" class="chartright" ></div>
+                  <p></p>
+                  <p >股票代號: {{id[0]}}</p>
+                  <p style="color: red;">今日參考價: {{priceReference[0]}}</p>
+                  <p style="color: red;">漲停價: {{priceHighLimit[0]}}</p>
+                  <p style="color:red;">跌停價: {{priceLowLimit[0]}}</p>
+                  <p>產業別:{{industryZhTw[0]}}</p>                
+                </div>
+                <div class="card w3-col s4 w3-khaki">
+                    <h1>{{stockname[1]}}</h1>
+                  <div id="chart2" class="chartright" ></div>
+                  <p></p>
+                  <p >股票代號: {{id[1]}}</p>
+                  <p style="color: red;">今日參考價: {{priceReference[1]}}</p>
+                  <p style="color: red;">漲停價: {{priceHighLimit[1]}}</p>
+                  <p style="color:red;">跌停價: {{priceLowLimit[1]}}</p>
+                  <p>產業別:{{industryZhTw[1]}}</p>     
+                </div>
+                <div class="card w3-col s4 w3-pale-red">
+                    <h1>{{stockname[2]}}</h1>
+                  <div id="chart3" class="chartright" ></div>
+                  <p></p>
+                  <p >股票代號: {{id[2]}}</p>
+                  <p style="color: red;">今日參考價: {{priceReference[2]}}</p>
+                  <p style="color: red;">漲停價: {{priceHighLimit[2]}}</p>
+                  <p style="color:red;">跌停價: {{priceLowLimit[2]}}</p>
+                  <p>產業別:{{industryZhTw[2]}}</p>     
+                </div>
+                <div class="card w3-col s4 w3-khaki">
+                    <h1>{{stockname[3]}}</h1>
+                    <div id="chart4" class="chartright" ></div>
+                    <p></p>
+                    <p >股票代號: {{id[3]}}</p>
+                    <p style="color: red;">今日參考價: {{priceReference[3]}}</p>
+                    <p style="color: red;">漲停價: {{priceHighLimit[3]}}</p>
+                    <p style="color:red;">跌停價: {{priceLowLimit[3]}}</p>
+                    <p>產業別:{{industryZhTw[3]}}</p>      
+                </div>
+                <div class="card w3-col s4 w3-pale-red">
+                    <h1>{{stockname[4]}}</h1>
+                    <div id="chart5" class="chartright" ></div>
+                    <p></p>
+                    <p >股票代號: {{id[4]}}</p>
+                    <p style="color: red;">今日參考價: {{priceReference[4]}}</p>
+                    <p style="color: red;">漲停價: {{priceHighLimit[4]}}</p>
+                    <p style="color:red;">跌停價: {{priceLowLimit[4]}}</p>
+                    <p>產業別:{{industryZhTw[4]}}</p>     
+                </div>
+                <div class="card w3-col s4 w3-khaki">
+                    <h1>{{stockname[5]}}</h1>
+                    <div id="chart6" class="chartright" ></div>
+                    <p></p>
+                    <p >股票代號: {{id[5]}}</p>
+                    <p style="color: red;">今日參考價: {{priceReference[5]}}</p>
+                    <p style="color: red;">漲停價: {{priceHighLimit[5]}}</p>
+                    <p style="color:red;">跌停價: {{priceLowLimit[5]}}</p>
+                    <p>產業別:{{industryZhTw[5]}}</p>     
+                </div>
+            </div>
+        </body>
+        <script src="https://code.highcharts.com/stock/highstock.js" ></script>
+        <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+        <script type="text/javascript"
+            src="{{ url_for('static', filename='highchart.js') }}"></script>
+        <script type="text/javascript"
+            src="{{ url_for('static', filename='highchart2.js') }}"></script>
+            <script type="text/javascript"
+            src="{{ url_for('static', filename='highchart3.js') }}"></script>
+            <script type="text/javascript"
+            src="{{ url_for('static', filename='highchart4.js') }}"></script>
+            <script type="text/javascript"
+            src="{{ url_for('static', filename='highchart5.js') }}"></script>
+            <script type="text/javascript"
+            src="{{ url_for('static', filename='highchart6.js') }}"></script>
+            <script type="text/javascript"
+            src="{{ url_for('static', filename='stockinfo.js') }}"></script>
+        
+        
+        
+    </html>
+{% endblock %}
